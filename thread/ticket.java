@@ -34,6 +34,9 @@ public class ticket extends Thread {
         s2.setName("窗口2");
         s3.setName("窗口3");
 
+        s1.setPriority(5);
+        s2.setPriority(1);
+        s3.setPriority(3);
         //开启线程
         s1.start();
         s2.start();

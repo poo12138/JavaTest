@@ -35,10 +35,11 @@ public class ceshi {
 //        byte b1=3,b2=4,b;
 //        b= b1+b2;
 //        b=3+4;
-
-
-
-
+        double t = 9.0;
+        while (Math.abs(t - 9.0/t) > .001)
+            t = (9.0/t + t) / 2.0;
+        System.out.println(t);
+        System.out.println((char) ('a' + 4));
         int[] ranArr = {};
         int red;
         Scanner input = new Scanner(System.in);

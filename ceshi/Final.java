@@ -2,6 +2,7 @@ package ceshi;
 import java.util.*;
 
 class Final {
+    static int i = 47;
     public void show() {
         //局部变量
         int num  = 10;
@@ -77,6 +78,11 @@ class FinalDemo2 {
         System.out.println(list);
         System.out.println(sub);
 
+        Final sta=new Final();
+        System.out.println(sta.i);
+        Final.i++;
+        System.out.println(sta.i);
+        System.out.println(Final.i);
     }
 
         //从指定的字符串中查找小串出现的次数  方法1

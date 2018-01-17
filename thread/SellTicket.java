@@ -5,7 +5,7 @@ public class SellTicket  implements Runnable {
     private int tickets = 100;
 
     //创建一把锁对象
-    Object obj = new Object();
+   // Object obj = new Object();
     public void run()
     {
 
@@ -15,7 +15,7 @@ public class SellTicket  implements Runnable {
             // 假设t1抢到CPU的执行权，t1就要进来
             // 假设t2抢到CPU的执行权，t2就要进来,发现门是关着的，进不去。所以就等着。
             // 门(开,关)
-            synchronized(obj){// 发现这里的代码将来是会被锁上的，所以t1进来后，就锁了。(关)
+            synchronized(this){// 发现这里的代码将来是会被锁上的，所以t1进来后，就锁了。(关)
                 if(tickets > 0)
                 {
                     try {
