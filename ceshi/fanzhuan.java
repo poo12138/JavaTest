@@ -1,5 +1,7 @@
 package ceshi;
 
+import link.Fanz;
+
 public class fanzhuan {
         public static void main(String[] args) {
             Fanz fz = new Fanz();

@@ -38,7 +38,7 @@ import javax.swing.JTextField;
 public class GuideSystem extends JFrame{
 
     //软件左上角图标
-    private Image icon = GuideUtil.getImage("images/icon.png");
+    private Image icon = GuideUtil.getImage("./image/icon.png");
     final private JButton firstPanelDownBut1 = new JButton("最短路径");
     final private JButton firstPanelDownBut2 = new JButton("擦除线路");
     final private JButton rightBut1 = new JButton("路经查询");
@@ -244,7 +244,7 @@ public class GuideSystem extends JFrame{
 
         JPanel firstPanelUp = new JPanel(new FlowLayout(FlowLayout.LEFT,0,0));
         firstPanel.add(firstPanelUp,BorderLayout.NORTH);
-        JLabel firstPanelMapLabel = new JLabel(new ImageIcon("C:/Users/poo/IdeaProjects/untitled/src/image/map.jpg"));
+        JLabel firstPanelMapLabel = new JLabel(new ImageIcon("./image/map.jpg"));
         firstPanelUp.add(firstPanelMapLabel);
 
         /**

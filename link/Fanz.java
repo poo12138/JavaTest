@@ -1,4 +1,4 @@
-package ceshi;
+package link;
 
 public class Fanz {
     /*
@@ -28,7 +28,19 @@ public class Fanz {
 //        for(int i=0;i<=A.length;i++){
 //            System.out.println(A[i]);
 //        }
+        System.out.println(A.length);
         return A;
     }
 
+    public static void main(String[] args) {
+        Fanz fz = new Fanz();
+        char[] a = {'a', 'b', 'c', 'd', 'e', 'f', 'a'};
+        char[] c = null;
+
+        c = fz.rotateString(a, 3);
+        System.out.println(c.length);
+        for (int i = 0; i <= c.length; i++) {
+            System.out.println(c[i]);
+        }
+    }
 }
